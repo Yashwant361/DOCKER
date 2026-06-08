@@ -10,7 +10,7 @@ app.use(express.json());
 
 //route + function 
 function handleHomePage(req,res){
-    res.send('Hello World')
+    res.send('Hello World , This is my first Node App')
 }
 
 app.get('/',handleHomePage);
