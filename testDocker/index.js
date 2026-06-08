@@ -7,6 +7,8 @@ app.use(express.json());
 //     res.send('Hello World')
 // })
 
+
+//route + function 
 function handleHomePage(req,res){
     res.send('Hello World')
 }
