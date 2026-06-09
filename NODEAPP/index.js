@@ -9,11 +9,14 @@ app.use(express.json());
 
 
 //route + function 
-function handleHomePage(req,res){
-    res.send('Hello World , This is my first Node App')
+function handleHomePage(req, res) {
+    res.status(200).json({
+        message: 'Hello World , This is my first Node App',
+        version: '1.0.0.0.0',
+    })
 }
 
-app.get('/',handleHomePage);
+app.get('/', handleHomePage);
 
 
 app.listen(8085, () => {
